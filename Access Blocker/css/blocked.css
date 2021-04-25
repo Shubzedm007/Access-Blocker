@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+html, body {
+  overflow-y: hidden;
+}
+body {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  position: relative;
+}
+
+#blocked-container {
+  width: 650px;
+  border-radius: 5px;
+  box-shadow: 0 0 .5em #d3d3d3;
+  padding: 1em;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+h1 {
+  background: url('chrome-extension://__MSG_@@extension_id__/images/hackathon-16x16.png') 0 2px no-repeat;
+  font-size: 100%;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 3px 0 3px 25px;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.inner {
+  padding: 1em;
+  border-radius: 3px;
+  background-color: #d3d3d3;
+  box-shadow: inset 0 0 .2em #d3d3d3;
+}
+
+.blocked-body {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  white-space: pre-wrap;
+  margin-bottom: 1em;
+}
+
+.blocked-url {
+}
+.blocked-url a {
+  display: block;
+  text-align: left;
+  font-size: 90%;
+}
+
+
+.blocked-footer {
+  padding-top: 10px;
+  text-align: right;
+}
+.blocked-footer small,
+.blocked-footer small a {
+  font-size: 11px;
+  color: rgb(0, 0, 0);
+}
+.blocked-footer small a:hover {
+  color: rgb(0, 0, 0);
+}
+

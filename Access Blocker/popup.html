@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="twitter:widgets:csp" content="on">
+        <title>Popup | Website Blocker</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/popup.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <script src="lib/jquery-2.0.0.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/website-blocker.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    <body>
+        <div id="container" style="display: none; width: 400px; height: 100%;">
+            <header>
+                <h1><b i18n="ext_name">Website Blocker</b></h1>
+            </header>
+            <section class="top-shadow clearfix">
+                <article id="block-ng" i18n="block_ng" class="hide">
+                    This page cannot be blocked.
+                </article>
+                <article id="block-already" i18n="block_already" class="hide">
+                    This page is already blocked.
+                </article>
+                <article id="block-ok" class="hide">
+                    <div class="group">
+                        <h3 i18n="add_domain">URL</h3>
+                        <input type="text" id="tmp-hostname" style="width: 50%;" placeholder="www.facebook.com" />
+                    </div>
+                    <div class="group">
+                        <h3 i18n="add_block_time">--</h3>
+                        <div class="time-group">
+                            <span i18n="add_time_1"></span>
+                            <input type="time" id="tmp-time-start" style="width: 6em; height: 50%;" value="00:00" placeholder="00:00" />
+                            <span i18n="add_time_2"></span>
+                            <input type="time" id="tmp-time-end" style="width: 6em;" value="23:59" placeholder="23:59" />
+                            <span i18n="add_time_3"></span>
+                        </div>
+                    </div>
+                    <button id="blockthis" i18n="add_blockthis" class="submit">Block this!</button>
+                </article>
+            </section>
+            <footer class="clearfix">
+                <nav id="control-nav" class="clearfix">
+                    <button i18n="options" class="options wb-button">--</button>
+                </nav>
+            </footer>
+        </div>
+        <script src="js/page-popup.js"></script>
+    </body>
+</html>

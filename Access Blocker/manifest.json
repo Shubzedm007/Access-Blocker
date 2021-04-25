@@ -1,0 +1,25 @@
+{
+  "name": "Access Blocker",
+  "description": "A website blocker that lets you work!",
+  "default_locale": "en",
+  "background": {
+    "page": "background.html"
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/hackathon-32x32.png"
+  },
+  "icons": {
+    "16": "images/hackathon-16x16.png",
+    "32": "images/hackathon-32x32.png",
+    "48": "images/hackathon-48x48.png",
+    "128": "images/hackathon-128x128.png"
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
+  "version": "0.1.0",
+  "manifest_version": 2
+}
